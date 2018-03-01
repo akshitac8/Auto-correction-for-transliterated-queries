@@ -1,11 +1,11 @@
 # Auto-correction-for-transliterated-queries
-### PLease refer to my blog [Transliterated Queries 2 – Deep Learning](https://deeplearn.school.blog/2017/01/05/__trashed/) for the implementation details.
+### PLease refer to my blog [Transliterated Queries 2 – Deep Learning](http://deeplearn-ai.com/2017/01/05/__trashed/) for the implementation details.
 
 The project is inspired by my following papers:
 * [Language Identification and Disambiguation in Indian Mixed-Script.](http://link.springer.com/chapter/10.1007%2F978-3-319-28034-9_14)
 * [Construction of a Semi-Automated model for FAQ Retrieval via Short Message Service.](http://dl.acm.org/citation.cfm?id=2838717)
 
-Refer to my blog for implementation of above papers:  [Simple Markov Model for correcting Transliterated Queries](https://deeplearn.school.blog/2016/12/17/auto-correction-for-transliterated-queries/#more-63)
+Refer to my blog for implementation of above papers:  [Simple Markov Model for correcting Transliterated Queries](http://deeplearn-ai.com/2016/12/17/auto-correction-for-transliterated-queries/)
   
 ### Dependencies:
 Install the following packages for using the project:
