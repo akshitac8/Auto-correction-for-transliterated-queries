@@ -103,7 +103,9 @@ class auto_correct:
         inp_words=words
         if words == False:
             words = raw_input('enter the query\n').lower()
-        #print words
+        else:
+            inp_words=False
+        #print "here", words
         words = words.split()
         mini = []
         obj = concat_error()
@@ -271,12 +273,14 @@ class auto_correct:
                 mini[1] = i
         try:
             if inp_words == False:
-                print ' '.join(mini[1]),'  ',mini[0]
+#                return ' '.join(mini[1]),'  ',mini[0]
+                pass
             else:
                 c =' '.join(mini[1]),mini[0]
                 self.cor.append((c,inp_words,ind))
-            #print ' '.join(mini[1]),'  ',mini[0]
+            return ' '.join(mini[1]),'  ',mini[0]
         except:
-            print new_sent
-            print 'invalid input'
+            pass
+            #print new_sent
+            #print 'invalid input'
         #print wrong1,mini

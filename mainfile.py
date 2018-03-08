@@ -12,13 +12,12 @@ for i in range(len(f)):
 model = auto.auto_correct()
 
 #==============================================================================
-p=model.run(words="hav rexd")
-print(p)
+# p=model.run(words="hav rexd")
+# print(p)
 # pred_array=[]
 # [pred_array.append(i) for i in p[0].split()]
 #==============================================================================
 
-bre
 mapx=[]
 x=0
 for i in range(len(gt_array)):

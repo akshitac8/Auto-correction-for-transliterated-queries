@@ -15,7 +15,7 @@ class bigram_auto:
     def create_bigram(self,data=False,num_of_ques=False):
         
         if data==False:
-            with open('Eng_queries_20K','rb')as h:
+            with open('2g_markov_model/Eng_queries_20K','rb')as h:
                 data = pickle.loads(h.read())
         if num_of_ques:
             data = data[0:num_of_ques]
@@ -33,9 +33,10 @@ class bigram_auto:
                 if len(j)>0:
                     self.vocab[j]=1
     
-    def model(self,data=False,num_of_ques=False):
+    def model(self,data=False,num_of_ques=False,query=None):
         self.create_bigram(data=False,num_of_ques=False)
-        query = raw_input('enter the query\n')
+        if query is None:
+            query = raw_input('enter the query\n')
         #words_expansion=[]
         #queries = []
         for i in query.split():
@@ -65,5 +66,5 @@ class bigram_auto:
                 prev_score = score
                 item = count
             count+=1
-        print ' '.join(self.queries[item])
+        return ' '.join(self.queries[item])
         #return words_expansion, queries
